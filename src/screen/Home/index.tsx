@@ -7,14 +7,20 @@ import Screen1 from "../screen1";
 import { moderateScale, moderateScaleVertical } from "../../components/responsiveSize";
 import { colors } from "../../assets/theme/color"; 
 import DetailPage from "../detailPage";
-import { Icons } from "../../assets/images";
+import { Icons } from "../../assets/i";
 import { styles } from "../../navigation/style";
+import Login from "../onboarding/login";
 
 const BottomTabs = createBottomTabNavigator();
 
  const Home = () => {
     return (
-      <BottomTabs.Navigator initialRouteName="Task1">
+      <BottomTabs.Navigator initialRouteName="Login">
+        <BottomTabs.Screen 
+        component={Login} 
+        name="Login"
+        options={{headerShown: false}}
+        />
       <BottomTabs.Screen
         component={Task1}
         name="Task1"

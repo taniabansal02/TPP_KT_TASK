@@ -12,9 +12,9 @@ import {
   moderateScaleVertical,
 } from '../../components/responsiveSize';
 import Modal from 'react-native-modal';
-import { Icons } from '../../assets/images';
+import { Icons } from '../../assets/i';
 import BackgroundTimer from 'react-native-background-timer';
-import Page1 from "../../assets/images/Page-1.png";
+import Page1 from "../../assets/i/Page-1.png";
 import { styles } from './style';
 import Strings from '../../assets/strings';
 import Button from '../../components/button';
@@ -55,11 +55,13 @@ const DetailPage = () => {
   useEffect(() => {
     getTimer(globalTimer);
   }, [globalTimer]);
+
   useEffect(() => {
     if (globalTimer > 0) {
       timerFunc();
     }
   }, [globalTimer]);
+
   const toggleModal = () => {
     setIsModalVisible(!isModalVisible);
   };

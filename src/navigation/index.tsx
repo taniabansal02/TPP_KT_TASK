@@ -10,7 +10,7 @@ import {styles} from './style';
 import {colors} from '../assets/theme/color';
 import Screen1 from '../screen/screen1';
 import Screen2 from '../screen/screen2';
-import {Icons} from '../assets/images';
+import {Icons} from '../assets/is';
 import {
   moderateScale,
   moderateScaleVertical,
@@ -29,7 +29,7 @@ const Navigation = () => {
   const DrawerNavigation = () => {
     return (
       <Drawer.Navigator>
-        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="Home" component={Home} options={{headerShown: false}} />
       </Drawer.Navigator>
     );
   };

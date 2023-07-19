@@ -5,6 +5,7 @@ import menu from './hamburger.svg';
 import convo from './tpp_convo_icon.svg';
 import shop from './tpp_shop_icon.svg';
 import directory from './tpp_directory_icon.svg';
+import logo from './Pageant_Planet_Logo_Stacked 1.svg';
 
 export const Icons = {
     crossBtn,
@@ -13,6 +14,7 @@ export const Icons = {
     menu,
     convo,
     shop,
-    directory
+    directory,
+    logo,
 }
 

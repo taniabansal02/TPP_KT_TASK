@@ -4,7 +4,7 @@ import {
   moderateScaleVertical,
   textScale
 } from '../../components/responsiveSize';
-import fonts from '../../assets/fonts';
+import fonts from '../../assets/font';
 import { colors } from '../../assets/theme/color';
 
 export const styles = StyleSheet.create({

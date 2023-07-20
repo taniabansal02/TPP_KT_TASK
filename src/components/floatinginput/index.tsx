@@ -133,16 +133,16 @@ const FloatingInput = ({
    * 'next' or calls the onDoneClick() function if the returnKeyType is 'done' and then calls the
    * Keyboard.dismiss() function.
    */
-  // const _onSubmitEditing = () => {
-  //   if (returnKeyType === 'next') {
-  //     !!nextField && nextField.focus();
-  //   } else if (returnKeyType === 'done') {
-  //     if (checkIsNull(onDoneClick)) {
-  //       onDoneClick();
-  //     }
-  //     Keyboard.dismiss();
-  //   }
-  // };
+  const _onSubmitEditing = () => {
+    if (returnKeyType === 'next') {
+      !!nextField && nextField.focus();
+    } else if (returnKeyType === 'done') {
+      // if (checkIsNull(onDoneClick)) {
+        onDoneClick();
+      // }
+      Keyboard.dismiss();
+    }
+  };
 
   return (
     <View
@@ -205,7 +205,7 @@ const FloatingInput = ({
               }
             }}
             placeholderTextColor={isFocus ? color.TRANSPARNT : color.S_GRAY_4}
-            // onSubmitEditing={_onSubmitEditing}
+            onSubmitEditing={_onSubmitEditing}
             autoFocus={isFocus}
             blurOnSubmit={false}
             editable={isEditable}
